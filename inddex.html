@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EJ TCHEC - Soluções em Informática</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #005eff;
+      --secondary: #0b1d36;
+      --light: #f4f6f8;
+      --dark: #0a0f1a;
+      --accent: #00e0ff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--dark);
+      color: var(--light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--secondary), #102c4a);
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 52px;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #cfd8dc;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      margin-top: 30px;
+      background: var(--primary);
+      color: white;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-size: 18px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background: #0040c1;
+    }
+
+    .section {
+      padding: 80px 20px;
+      text-align: center;
+      background-color: #111827;
+    }
+
+    .section:nth-of-type(even) {
+      background-color: #0d1828;
+    }
+
+    .section h3 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: var(--accent);
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: #1e293b;
+      border-radius: 15px;
+      padding: 30px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 94, 255, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px rgba(0, 224, 255, 0.15);
+    }
+
+    .card i {
+      font-size: 40px;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #ccc;
+    }
+
+    footer {
+      background: #0d1117;
+      padding: 40px 20px;
+      color: #aaa;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 36px;
+      }
+
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EJ TCHEC</h1>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#empresa">Empresa</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Excelência em Tecnologia</h2>
+    <p>Montagem, manutenção e suporte técnico de computadores com profissionalismo, qualidade e confiança.</p>
+    <a href="https://wa.me/5581994545114" class="btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> Fale Conosco</a>
+  </section>
+
+  <section class="section" id="servicos">
+    <h3>Nossos Serviços</h3>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-tools"></i>
+        <h4>Manutenção</h4>
+        <p>Serviço completo com diagnóstico técnico, substituição de peças e garantia de funcionamento.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-laptop-code"></i>
+        <h4>Montagem</h4>
+        <p>PCs personalizados para home office, empresas, games e estações de trabalho.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-memory"></i>
+        <h4>Upgrades</h4>
+        <p>Aumente a performance com SSDs, mais RAM, placas de vídeo e overclock seguro.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-headset"></i>
+        <h4>Suporte Técnico</h4>
+        <p>Atendimento remoto ou presencial, com agilidade e atendimento personalizado.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="empresa">
+    <h3>Sobre a EJ TCHEC</h3>
+    <p style="max-width: 700px; margin: 0 auto; color: #ccc;">
+      A EJ TCHEC é uma empresa especializada em soluções tecnológicas. Atendemos empresas e clientes particulares com compromisso, inovação e qualidade. Localizados na <strong>Rua Saldanha Marinho, 1470</strong>, em Recife - PE, somos referência regional em montagem de computadores e suporte técnico.
+    </p>
+  </section>
+
+  <section class="section" id="contato">
+    <h3>Contato e Localização</h3>
+    <p>📍 Rua Saldanha Marinho, 1470 — Recife - PE</p>
+    <p>📞 (81) 99454-5114</p>
+    <p>📧 atendimento@ejtchec.com.br</p>
+    <p>🕒 Atendimento: Seg a Sex, das 09h às 18h</p>
+    <div style="margin-top: 20px;">
+      <a href="https://wa.me/5581994545114" class="btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.instagram.com/ejtchec" class="btn-primary" style="background: #E1306C;" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Rua+Saldanha+Marinho,+1470" class="btn-primary" style="background: #4285F4;" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver Mapa</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 EJ TCHEC — Todos os direitos reservados<br>
+    CNPJ: 12.345.678/0001-99 • Recife - PE
+  </footer>
+
+</body>
+</html>
